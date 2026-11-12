@@ -1,0 +1,34 @@
+---
+title: "palmer_penguins_RMarkdown"
+output: html_document
+date: "2026-11-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Set-up}
+
+## Practice Data on Palmer Penguins ##
+# Available at: https://allisonhorst.github.io/palmerpenguins/
+
+citation("palmerpenguins")
+
+## Installation
+
+install.packages("palmerpenguins")
+
+# Description of the two datasets
+
+library(palmerpenguins)
+data(package = 'palmerpenguins')
+
+# Use the penguin dataset to structure your project
+library(tidyverse)
+head(penguins)
+
+```
+
+
+
